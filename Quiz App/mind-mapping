@@ -1,0 +1,23 @@
+01 - create JSON Object For Questions
+02 - creating HTML
+03 - Add Dummy Data
+04 - Create The Styling
+05 - Fetch Number Of Questions From JSON Object
+06 - Show Questions Count + Questions Category
+07 - Show The Number Of Bullets depend on questions Count
+08 - set the number for the right and wrong answer
+09 - Create count timer 
+10 - fitch the questions from the JSON Object
+11 - show first question
+12 - check if answer and hide questions then show next one
+13 - if count timer end move to the next question
+14 - add class on bullet after answering the question
+14 - calc the points and show results
+
+
+Ideas 
+- a json object for each language quiz
+- add many questions and choose only 10 randomly
+- randomize answers 
+
+بهاد التطبيق بدي واجهة لحتى انا اقدر اضيف واعدل البيانات الموجودة يعني إذا بدي اضيف سؤال مااروح على ملف ال جايسون اضيف وانما عن طريق واجهة UI وهي بتضيف الملفات لحالها بالجيسون

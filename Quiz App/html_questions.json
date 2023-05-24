@@ -1,0 +1,34 @@
+[
+    {
+        "title": "why we use <br> element",
+        "answer_1" : "to make text bold", 
+        "answer_2" : "to make text italic", 
+        "answer_3" : "to make text bold", 
+        "answer_4" : "to add a break line", 
+        "right_answer": "to add a break line"
+    },
+    {
+        "title": "why we use <img> element",
+        "answer_1" : "to add a link", 
+        "answer_2" : "to add a footer", 
+        "answer_3" : "to create an image", 
+        "answer_4" : "to add an image", 
+        "right_answer": "to add an image"
+    },
+    {
+        "title": "why we use <br> element",
+        "answer_1" : "to make text bold", 
+        "answer_2" : "to make text italic", 
+        "answer_3" : "to make text bold", 
+        "answer_4" : "to add a break line", 
+        "right_answer": "to add a break line"
+    },
+    {
+        "title": "why we use <br> element",
+        "answer_1" : "to make text bold", 
+        "answer_2" : "to make text italic", 
+        "answer_3" : "to make text bold", 
+        "answer_4" : "to add a break line", 
+        "right_answer": "to add a break line"
+    }
+]

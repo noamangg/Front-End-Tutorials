@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo&family=Comfortaa:wght@400;500;600;700&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+
+
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="quiz-app">
+        <div class="quiz-info">
+            <div class="category">
+                Category: <span>HTML</span>
+            </div>
+            <div class="count">Questions Count: <span>10</span></div>
+
+        </div>
+        
+
+        <div class="quiz-area">
+            <h2>Why We Use &lt;br&gt; Element ?</h2>
+        </div>
+        
+
+        <ul class="answers-area">
+            <li class="answer">
+                <input type="radio" id="answer_1" name="answers">
+                <label for="answer_1">To make text bold</label>
+            </li>
+            <li class="answer">
+                <input type="radio" id="answer_2" name="answers">
+                <label for="answer_2">To make text thin</label>
+            </li>
+            <li class="answer">
+                <input type="radio" id="answer_3" name="answers">
+                <label for="answer_3">To make text bolder</label>
+            </li>
+            <li class="answer">
+                <input type="radio" id="answer_4" name="answers">
+                <label for="answer_4">To make text light</label>
+            </li>
+        </ul>
+        <div class="bullets">
+            <div class="spans">
+                <span class="on"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="countdown">
+                <span class="minutes">02</span> : <span class="seconds">45</span>
+            </div>
+        </div>
+
+        <div class="results"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.quiz-app {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 20px 20px;
+  flex: 1;
+  max-width: 500px;
+  background-color: #302b6333;
+  box-shadow: 0 0 10px rgba(20, 20, 20, 0.13);
+
+}
+
+.quiz-app .quiz-info {
+  display: flex;
+  font-size: 0.85rem;
+  color: #6b6fbb;
+  justify-content: space-between;
+  flex-flow: wrap;
+  gap: .25rem;
+}
+
+.quiz-app .quiz-area {
+  margin: 3rem 0 2rem;
+  text-align: center;
+}
+.quiz-app .answers-area {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.answers-area .answer {
+  padding: 0 1rem 0 3rem;
+  display: flex;
+  gap: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.062);
+  border-radius: 0.5rem;
+  transition: .25s;
+}
+
+.answers-area .answer:has(input:checked) {
+    border-color: rgba(255, 255, 255, 0.329);
+}
+.answers-area .answer input {
+    display: none;
+}
+.answers-area .answer label::before,
+.answers-area .answer label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .25s;
+    border-radius: 50%;
+
+}
+.answers-area .answer label::before {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.034);
+    left: -2rem;
+}
+.answers-area .answer label::after {
+    width: 10px;
+    height: 10px;
+    left: calc(-2rem + 5px);
+    background-color: #24243e;
+}
+.answers-area .answer input:checked + label::before{
+    background-color: rgba(255, 255, 255, 0.979);
+
+}
+.answers-area .answer input:checked + label::after{
+    background-color: #2d2d7c;
+
+}
+
+.answers-area .answer label {
+  flex: 1;
+  padding: 1rem 0;
+  position: relative;
+}
+
+
+.bullets {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bullets .spans {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.bullets .spans span{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+}
+.bullets .spans span.on {
+    background-color: #4949cc;
+}
+
+.bullets .countdown {
+    text-align: end;
+    font-weight: bolder;
+    font-size: .85rem;
+}
