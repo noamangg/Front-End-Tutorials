@@ -3,7 +3,7 @@
         "title": "why we use <br> element",
         "answer_1" : "to make text bold", 
         "answer_2" : "to make text italic", 
-        "answer_3" : "to make text bold", 
+        "answer_3" : "to make text bolder", 
         "answer_4" : "to add a break line", 
         "right_answer": "to add a break line"
     },
@@ -24,11 +24,43 @@
         "right_answer": "to add a break line"
     },
     {
-        "title": "why we use <br> element",
-        "answer_1" : "to make text bold", 
-        "answer_2" : "to make text italic", 
-        "answer_3" : "to make text bold", 
-        "answer_4" : "to add a break line", 
-        "right_answer": "to add a break line"
+        "title": "why man use <br> element",
+        "answer_1" : "nto make text bold", 
+        "answer_2" : "nto make text italic", 
+        "answer_3" : "nto make text bold", 
+        "answer_4" : "nto add a break line", 
+        "right_answer": "nto add a break line"
+    },
+    {
+        "title": "whyman use <br> element",
+        "answer_1" : "nto make text bold", 
+        "answer_2" : "nto make text italic", 
+        "answer_3" : "nto make text bold", 
+        "answer_4" : "nto add a break line", 
+        "right_answer": "nto add a break line"
+    },
+    {
+        "title": "why Noamn use <br> element",
+        "answer_1" : "nto make text bold", 
+        "answer_2" : "nto make text italic", 
+        "answer_3" : "nto make text bold", 
+        "answer_4" : "nto add a break line", 
+        "right_answer": "nto add a break line"
+    },
+    {
+        "title": "why Naman use <br> element",
+        "answer_1" : "nto make text bold", 
+        "answer_2" : "nto make text italic", 
+        "answer_3" : "nto make text bold", 
+        "answer_4" : "nto add a break line", 
+        "right_answer": "nto add a break line"
+    },
+    {
+        "title": "why last question use <br> element",
+        "answer_1" : "nto make text bold", 
+        "answer_2" : "nto make text italic", 
+        "answer_3" : "nto make text bold", 
+        "answer_4" : "nto add a break line", 
+        "right_answer": "nto add a break line"
     }
 ]
