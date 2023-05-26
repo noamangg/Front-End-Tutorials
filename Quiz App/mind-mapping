@@ -4,7 +4,6 @@
 04 - Create The Styling
 05 - Fetch Number Of Questions From JSON Object
 06 - Show Questions Count + Questions Category
-
 07 - Show The Number Of Bullets depend on questions Count
 08 - set the number for the right and wrong answer
 09 - Create count timer 
@@ -20,5 +19,7 @@ Ideas
 - a json object for each language quiz
 - add many questions and choose only 10 randomly
 - randomize answers 
+
+حط على اليمين واجهة مقارنة النقاط السابقة بالنقاط الحالية اون آخر امتحان اخذذه كم كان نقاطه فيه
 
 بهاد التطبيق بدي واجهة لحتى انا اقدر اضيف واعدل البيانات الموجودة يعني إذا بدي اضيف سؤال مااروح على ملف ال جايسون اضيف وانما عن طريق واجهة UI وهي بتضيف الملفات لحالها بالجيسون

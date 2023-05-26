@@ -162,7 +162,7 @@ body {
 .result-box h2 {
   margin-bottom: 1rem;
 }
-.result-box p {
+.result-box > p:first-of-type {
   margin-bottom: 2rem;
 }
 .result-box button {
@@ -189,4 +189,20 @@ body {
 }
 .result-box p span.bad {
   color: #e91e63;
+}
+
+.results a {
+  display: block;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    gap: 10px;
+    font-size: .8rem;
+}
+.results a img {
+  width: 25px;
 }

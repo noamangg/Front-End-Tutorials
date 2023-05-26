@@ -7,9 +7,12 @@ let results = document.querySelector(".results");
 let countdownElement = document.querySelector(".countdown");
 
 // Set Options
-let currentIndex = 0;
+let bulletsCount = 1;
 let rightAnswers = 0;
 let countdownInterval;
+// In Seconds
+let durationTime = 8;
+let arrQuestions;
 
 function getQuestion() {
   let myRequest = new XMLHttpRequest();
@@ -22,34 +25,42 @@ function getQuestion() {
       // Create Bullets + Set Questions Count
       createBullets(qCount);
 
+      arrQuestions = new Array(qCount);
       // Add Questions Data
-      addQuestionsData(questionObject[currentIndex]);
+      for (let i = 0; i < arrQuestions.length; i++)
+        arrQuestions[i] = i;
 
-      countDown(5, qCount);
+      let random = generateRandom(qCount, arrQuestions);
+      addQuestionsData(questionObject[random]);
+      arrQuestions = arrQuestions.filter((e) => e !== random);
+      countDown(durationTime);
 
       body.addEventListener("click", function (e) {
         setTimeout(function () {
           if (e.target.tagName.toLowerCase() === "label") {
-            if (currentIndex < qCount) {
-              console.log("Count ", qCount);
-              console.log("Current ", currentIndex);
-              let rightAnswer = questionObject[currentIndex].right_answer;
-              currentIndex++
-              if (e.target.textContent === rightAnswer) rightAnswers++;
-              if (currentIndex < qCount) {
-                addQuestionsData(questionObject[currentIndex]);
-              }
-              else {
-                showResult(qCount);
-              }
+            console.log("inside the label");
+            let rightAnswer = questionObject[random].right_answer;
+            if (e.target.textContent === rightAnswer) rightAnswers++;
 
 
-
-              handelBullets();
-              clearInterval(countdownInterval);
-              countDown(5, qCount);
-
+            if (arrQuestions.length !== 0) {
+              console.log(arrQuestions.length, " arry inside before minus");
+              random = generateRandom(qCount, arrQuestions);
+              console.log(arrQuestions);
+              console.log("random ", random);
+              addQuestionsData(questionObject[random]);
+              arrQuestions = arrQuestions.filter((e) => e !== random);
             }
+            else {
+              console.log("i'm in else now");
+              showResult(qCount);
+              clearInterval(countdownInterval);
+            }
+            handelBullets();
+            clearInterval(countdownInterval);
+            countDown(durationTime);
+
+
           }
 
         }, 500);
@@ -105,10 +116,11 @@ function handelBullets() {
   let bulletsSpan = document.querySelectorAll(".bullets .spans span");
   let arrayOfSpans = Array.from(bulletsSpan);
   arrayOfSpans.forEach((span, index) => {
-    if (index === currentIndex) {
+    if (index === bulletsCount) {
       span.className = "on";
     }
   })
+  bulletsCount++;
 }
 
 function showResult(totalQuestions) {
@@ -120,6 +132,7 @@ function showResult(totalQuestions) {
   let resultBox = document.createElement("div");
   resultBox.className = "result-box";
   let h2 = document.createElement("h2");
+  console.log("right answer ", rightAnswers);
   h2.innerHTML = `Your Result IS ${rightAnswers} Points`;
   let p = document.createElement("p");
   p.innerHTML = `${rightAnswers}/${totalQuestions} you are ${word}`;
@@ -127,19 +140,37 @@ function showResult(totalQuestions) {
   let button = document.createElement("button");
   button.onclick = reloadPage;
   button.textContent = "Take The Exam Again";
+
+  let a = document.createElement("a");
+  a.href = "https://github.com/noamangg";
+  a.target = "_blank";
+
+  let img = document.createElement("img");
+  img.src = "imgs/icons8-github-100.png";
+  img.alt = "github";
+
+  let pLink = document.createElement("p");
+  pLink.textContent = "Made With 🎉 By Noaman";
+
+  a.appendChild(img);
+  a.appendChild(pLink);
   resultBox.appendChild(h2);
   resultBox.appendChild(p);
   resultBox.appendChild(button);
+  resultBox.appendChild(a);
+
 
   results.appendChild(resultBox);
   results.style.display = "flex";
 
   countdownElement.remove();
 }
+
 function reloadPage() {
   window.location.reload();
 }
-function countDown(duration, count) {
+
+function countDown(duration) {
   let minutes, seconds;
   addZeroes = (ele) => ele <= 9 ? `0${ele}` : ele;
 
@@ -150,10 +181,18 @@ function countDown(duration, count) {
     seconds = addZeroes(seconds);
 
     countdownElement.innerHTML = `${minutes}:${seconds}`;
-    if (--duration < 0) {
+    if (--duration < 0 && arrQuestions.length != 0) {
       clearInterval(countdownInterval);
       document.querySelector("label").click();
     }
 
   }, 800);
+}
+
+function generateRandom(max, arr) {
+  let random = Math.floor(Math.random() * max);
+  while (!arr.includes(random))
+    random = Math.floor(Math.random() * max);
+
+  return random;
 }
