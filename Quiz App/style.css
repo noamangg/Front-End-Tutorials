@@ -8,12 +8,7 @@ body {
   font-family: "Comfortaa", cursive;
   background: #0f0c29;
 
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  );
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   color: white;
 
   display: flex;
@@ -30,7 +25,6 @@ body {
   max-width: 500px;
   background-color: #302b6333;
   box-shadow: 0 0 10px rgba(20, 20, 20, 0.13);
-
 }
 
 .quiz-app .quiz-info {
@@ -39,7 +33,7 @@ body {
   color: #6b6fbb;
   justify-content: space-between;
   flex-flow: wrap;
-  gap: .25rem;
+  gap: 0.25rem;
 }
 
 .quiz-app .quiz-area {
@@ -60,44 +54,41 @@ body {
   gap: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.062);
   border-radius: 0.5rem;
-  transition: .25s;
+  transition: 0.25s;
 }
 
 .answers-area .answer:has(input:checked) {
-    border-color: rgba(255, 255, 255, 0.329);
+  border-color: rgba(255, 255, 255, 0.329);
 }
 .answers-area .answer input {
-    display: none;
+  display: none;
 }
 .answers-area .answer label::before,
 .answers-area .answer label::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: .25s;
-    border-radius: 50%;
-
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.25s;
+  border-radius: 50%;
 }
 .answers-area .answer label::before {
-    width: 20px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.034);
-    left: -2rem;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.034);
+  left: -2rem;
 }
 .answers-area .answer label::after {
-    width: 10px;
-    height: 10px;
-    left: calc(-2rem + 5px);
-    background-color: #24243e;
+  width: 10px;
+  height: 10px;
+  left: calc(-2rem + 5px);
+  background-color: #24243e;
 }
-.answers-area .answer input:checked + label::before{
-    background-color: rgba(255, 255, 255, 0.979);
-
+.answers-area .answer input:checked + label::before {
+  background-color: rgba(255, 255, 255, 0.979);
 }
-.answers-area .answer input:checked + label::after{
-    background-color: #2d2d7c;
-
+.answers-area .answer input:checked + label::after {
+  background-color: #2d2d7c;
 }
 
 .answers-area .answer label {
@@ -106,57 +97,54 @@ body {
   position: relative;
 }
 
-
 .bullets {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .bullets .spans {
-    display: flex;
-    gap: 5px;
-    align-items: center;
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
-.bullets .spans span{
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    background-color: white;
-    border-radius: 50%;
+.bullets .spans span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
 }
 .bullets .spans span.on {
-    background-color: #4949cc;
+  background-color: #4949cc;
 }
 
 .bullets .countdown {
-    text-align: end;
-    font-weight: bolder;
-    font-size: .85rem;
+  text-align: end;
+  font-weight: bolder;
+  font-size: 0.85rem;
 }
 
 .results {
-
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(27, 27, 27, 0.534);
   left: 0;
-  top: 0; 
+  top: 0;
 
   display: none;
   justify-content: center;
   align-items: center;
 }
 .result-box {
-
   position: absolute;
   background-color: #302b63;
   padding: 2rem 4rem;
   text-align: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
 }
 .result-box h2 {
@@ -166,16 +154,19 @@ body {
   margin-bottom: 2rem;
 }
 .result-box button {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   outline: none;
   border: none;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   font-weight: bold;
   background-color: #2d2d7c;
-  box-shadow:  0 0 7px rgba(0, 0, 0, 0.178);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.178);
   color: white;
   cursor: pointer;
-  transition: .25s;
+  transition: 0.25s;
+}
+.result-box button:first-of-type {
+  margin-right: 0.25rem;
 }
 .result-box button:hover {
   background-color: #24243e;
@@ -193,16 +184,75 @@ body {
 
 .results a {
   display: block;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    margin-top: 1rem;
-    gap: 10px;
-    font-size: .8rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  gap: 10px;
+  font-size: 0.8rem;
 }
 .results a img {
   width: 25px;
+}
+
+.container-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  justify-content: space-between;
+  text-align: center;
+}
+.container-index > a {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  padding: 1.5rem;
+  overflow: hidden;
+
+  text-decoration: none;
+  color: white;
+  border-radius: 0.5rem;
+  border: 2px solid #24243e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.096);
+  cursor: pointer;
+  transition: 0.25s;
+}
+.container-index > a:is(:not(.tailwind, .css, .js)):hover {
+  transform: translateY(-20px);
+}
+.container-index > a.css {
+  background-color: #2196f3;
+}
+.container-index > a.js {
+  background-color: #ffd600;
+}
+.container-index > a.html {
+  background-color: #f44336;
+}
+.container-index > a.tailwind {
+  background-color: #00ade2;
+}
+.container-index > a:is(.tailwind, .css, .js)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container-index > a > img {
+  width: 150px;
+}
+.container-index > a > p {
+  font-weight: bolder;
 }

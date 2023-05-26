@@ -122,6 +122,12 @@ function handelBullets() {
   })
   bulletsCount++;
 }
+function reloadPage() {
+  window.location.reload();
+}
+function openMenu() {
+  window.location.href = "index.html"
+}
 
 function showResult(totalQuestions) {
   let word = `<span class ="good">good</span>`;
@@ -137,9 +143,13 @@ function showResult(totalQuestions) {
   let p = document.createElement("p");
   p.innerHTML = `${rightAnswers}/${totalQuestions} you are ${word}`;
 
-  let button = document.createElement("button");
+  let button = document.createElement("button");  
   button.onclick = reloadPage;
   button.textContent = "Take The Exam Again";
+
+  let button2 =document.createElement("button");
+  button2.onclick = openMenu;
+  button2.textContent = "Take Another Exam";
 
   let a = document.createElement("a");
   a.href = "https://github.com/noamangg";
@@ -157,6 +167,7 @@ function showResult(totalQuestions) {
   resultBox.appendChild(h2);
   resultBox.appendChild(p);
   resultBox.appendChild(button);
+  resultBox.appendChild(button2);
   resultBox.appendChild(a);
 
 
@@ -166,9 +177,7 @@ function showResult(totalQuestions) {
   countdownElement.remove();
 }
 
-function reloadPage() {
-  window.location.reload();
-}
+
 
 function countDown(duration) {
   let minutes, seconds;
