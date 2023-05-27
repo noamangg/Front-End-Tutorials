@@ -11,8 +11,9 @@ let bulletsCount = 1;
 let rightAnswers = 0;
 let countdownInterval;
 // In Seconds
-let durationTime = 8;
+let durationTime = 5;
 let arrQuestions;
+let qQuestions = 5;
 
 function getQuestion() {
   let myRequest = new XMLHttpRequest();
@@ -20,40 +21,39 @@ function getQuestion() {
   myRequest.onreadystatechange = function () {
     if (this.status === 200 && this.readyState === 4) {
       let questionObject = JSON.parse(this.responseText);
-      let qCount = questionObject.length;
+
+      let qCount = qQuestions;
+      let questionLength = questionObject.length;
+      // let qCount = questionObject.length;
 
       // Create Bullets + Set Questions Count
       createBullets(qCount);
 
-      arrQuestions = new Array(qCount);
+      arrQuestions = new Array(questionObject.length);
       // Add Questions Data
       for (let i = 0; i < arrQuestions.length; i++)
         arrQuestions[i] = i;
 
-      let random = generateRandom(qCount, arrQuestions);
+      let random = generateRandom(questionLength, arrQuestions);
       addQuestionsData(questionObject[random]);
       arrQuestions = arrQuestions.filter((e) => e !== random);
+      qCount--;
       countDown(durationTime);
 
       body.addEventListener("click", function (e) {
         setTimeout(function () {
           if (e.target.tagName.toLowerCase() === "label") {
-            console.log("inside the label");
             let rightAnswer = questionObject[random].right_answer;
             if (e.target.textContent === rightAnswer) rightAnswers++;
 
 
-            if (arrQuestions.length !== 0) {
-              console.log(arrQuestions.length, " arry inside before minus");
-              random = generateRandom(qCount, arrQuestions);
-              console.log(arrQuestions);
-              console.log("random ", random);
+            if (qCount--) {
+              random = generateRandom(questionLength, arrQuestions);
               addQuestionsData(questionObject[random]);
               arrQuestions = arrQuestions.filter((e) => e !== random);
             }
             else {
-              console.log("i'm in else now");
-              showResult(qCount);
+              showResult(qQuestions);
               clearInterval(countdownInterval);
             }
             handelBullets();
@@ -69,9 +69,11 @@ function getQuestion() {
     }
   };
 
-  myRequest.open("GET", "html_questions.json", true);
+  // create  afuntion that's return a string
+  myRequest.open("GET", localStorage.JsonFile, true);
   myRequest.send();
 }
+
 getQuestion();
 function createBullets(num) {
   countSpan.innerHTML = num;
@@ -86,7 +88,6 @@ function createBullets(num) {
 
   bullets.prepend(spans);
 }
-
 function addQuestionsData(obj) {
   quizArea.innerHTML = "";
   // Add The Question
@@ -96,7 +97,7 @@ function addQuestionsData(obj) {
 
   // Add Answers To The HTML
   answersArea.innerHTML = "";
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= Object.keys(obj).length - 2; i++) {
     let li = document.createElement("li");
     li.className = "answer";
     let input = document.createElement("input");
@@ -128,7 +129,6 @@ function reloadPage() {
 function openMenu() {
   window.location.href = "index.html"
 }
-
 function showResult(totalQuestions) {
   let word = `<span class ="good">good</span>`;
   if (rightAnswers === totalQuestions)
@@ -138,16 +138,15 @@ function showResult(totalQuestions) {
   let resultBox = document.createElement("div");
   resultBox.className = "result-box";
   let h2 = document.createElement("h2");
-  console.log("right answer ", rightAnswers);
   h2.innerHTML = `Your Result IS ${rightAnswers} Points`;
   let p = document.createElement("p");
   p.innerHTML = `${rightAnswers}/${totalQuestions} you are ${word}`;
 
-  let button = document.createElement("button");  
+  let button = document.createElement("button");
   button.onclick = reloadPage;
   button.textContent = "Take The Exam Again";
 
-  let button2 =document.createElement("button");
+  let button2 = document.createElement("button");
   button2.onclick = openMenu;
   button2.textContent = "Take Another Exam";
 
@@ -176,9 +175,6 @@ function showResult(totalQuestions) {
 
   countdownElement.remove();
 }
-
-
-
 function countDown(duration) {
   let minutes, seconds;
   addZeroes = (ele) => ele <= 9 ? `0${ele}` : ele;
@@ -197,7 +193,6 @@ function countDown(duration) {
 
   }, 800);
 }
-
 function generateRandom(max, arr) {
   let random = Math.floor(Math.random() * max);
   while (!arr.includes(random))

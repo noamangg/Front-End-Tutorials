@@ -3,6 +3,13 @@
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  background-color: #24243e;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #302b63;
+}
 body {
   position: relative;
   font-family: "Comfortaa", cursive;
@@ -199,11 +206,11 @@ body {
 }
 
 .container-index {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-
-  justify-content: space-between;
+  max-width: 500px;
+  justify-content: center;
   text-align: center;
 }
 .container-index > a {
@@ -224,7 +231,7 @@ body {
   cursor: pointer;
   transition: 0.25s;
 }
-.container-index > a:is(:not(.tailwind, .css, .js)):hover {
+.container-index > a:is(:not(.tailwind, .js)):hover {
   transform: translateY(-20px);
 }
 .container-index > a.css {
@@ -239,7 +246,7 @@ body {
 .container-index > a.tailwind {
   background-color: #00ade2;
 }
-.container-index > a:is(.tailwind, .css, .js)::before {
+.container-index > a:is(.tailwind, .js)::before {
   content: "";
   position: absolute;
   top: 0;

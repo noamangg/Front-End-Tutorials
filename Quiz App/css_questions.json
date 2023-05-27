@@ -1,14 +1,6 @@
 [
     {
-        "title": "What does HTML stands for",
-        "answer_1" : "Hypertext Machine language.", 
-        "answer_2" : "Hypertext and links markup language.", 
-        "answer_3" : "Hypertext Markup Language.", 
-        "answer_4" : "Hightext machine language.", 
-        "right_answer": "Hypertext Markup Language."
-    },
-    {
-        "title": "why we use <br> element",
+        "title": "why we use <br> element css",
         "answer_1" : "to make text bold", 
         "answer_2" : "to make text italic", 
         "answer_3" : "to make text bolder", 
@@ -16,7 +8,7 @@
         "right_answer": "to add a break line"
     },
     {
-        "title": "why we use <img> element 1",
+        "title": "why we use <img>  css 1",
         "answer_1" : "to add a link", 
         "answer_2" : "to add a footer", 
         "answer_3" : "to create an image", 
@@ -24,7 +16,7 @@
         "right_answer": "to add an image"
     },
     {
-        "title": "why we use <br> element 2",
+        "title": "why we use <br>  css 2",
         "answer_1" : "to make text bold", 
         "answer_2" : "to make text italic", 
         "answer_3" : "to make text bold", 
@@ -32,7 +24,7 @@
         "right_answer": "to add a break line"
     },
     {
-        "title": "why man use <br> element 3",
+        "title": "why man use <br>  css 3",
         "answer_1" : "nto make text bold", 
         "answer_2" : "nto make text italic", 
         "answer_3" : "nto make text bold", 
@@ -40,7 +32,7 @@
         "right_answer": "nto add a break line"
     },
     {
-        "title": "whyman use <br> element 4",
+        "title": "whyman use <br>  css 4",
         "answer_1" : "nto make text bold", 
         "answer_2" : "nto make text italic", 
         "answer_3" : "nto make text bold", 
@@ -48,7 +40,7 @@
         "right_answer": "nto add a break line"
     },
     {
-        "title": "why Noamn use <br> element 5",
+        "title": "why Noamn use <br>  css 5",
         "answer_1" : "nto make text bold", 
         "answer_2" : "nto make text italic", 
         "answer_3" : "nto make text bold", 
@@ -56,7 +48,7 @@
         "right_answer": "nto add a break line"
     },
     {
-        "title": "why Naman use <br> element 6",
+        "title": "why Naman use <br>  css 6",
         "answer_1" : "nto make text bold", 
         "answer_2" : "nto make text italic", 
         "answer_3" : "nto make text bold", 
@@ -64,7 +56,7 @@
         "right_answer": "nto add a break line"
     },
     {
-        "title": "why last question use <br> element 7",
+        "title": "why last question use <br>  css 7",
         "answer_1" : "nto make text bold", 
         "answer_2" : "nto make text italic", 
         "answer_3" : "nto make text bold", 
