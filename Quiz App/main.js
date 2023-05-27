@@ -13,7 +13,7 @@ let countdownInterval;
 // In Seconds
 let durationTime = 5;
 let arrQuestions;
-let qQuestions = 5;
+let qQuestions = 15;
 
 function getQuestion() {
   let myRequest = new XMLHttpRequest();
@@ -21,7 +21,6 @@ function getQuestion() {
   myRequest.onreadystatechange = function () {
     if (this.status === 200 && this.readyState === 4) {
       let questionObject = JSON.parse(this.responseText);
-
       let qCount = qQuestions;
       let questionLength = questionObject.length;
       // let qCount = questionObject.length;
@@ -97,19 +96,25 @@ function addQuestionsData(obj) {
 
   // Add Answers To The HTML
   answersArea.innerHTML = "";
-  for (let i = 1; i <= Object.keys(obj).length - 2; i++) {
+  let questionArray = new Array(Object.keys(obj).length - 2);
+  for(let i = 0; i < questionArray.length; i++)
+  questionArray[i] = i + 1;
+
+  for (let i = 0; i < Object.keys(obj).length - 2; i++) {
+    let random = generateRandom(Object.keys(obj).length - 1,questionArray);
     let li = document.createElement("li");
     li.className = "answer";
     let input = document.createElement("input");
     input.type = "radio";
     input.setAttribute("name", "answers");
-    input.setAttribute("id", `answer_${i}`);
+    input.setAttribute("id", `answer_${random}`);
     let label = document.createElement("label");
     label.setAttribute("for", input.getAttribute("id"));
-    label.textContent = obj[`answer_${i}`];
+    label.textContent = obj[`answer_${random}`];
     li.appendChild(input);
     li.appendChild(label);
     answersArea.prepend(li);
+    questionArray = questionArray.filter((e) => e !== random);
   }
 
 }
@@ -195,8 +200,20 @@ function countDown(duration) {
 }
 function generateRandom(max, arr) {
   let random = Math.floor(Math.random() * max);
-  while (!arr.includes(random))
-    random = Math.floor(Math.random() * max);
+  let i = 0;
+  while (!arr.includes(random)) {
+    random = Math.floor(Math.random() * max);i++;
+    // console.log(`I'm in random hell`)
+    // if(i > 100)
+    // break;
+  }
 
   return random;
 }
+// let aee = [1,2];
+// for(let i = 0; i < aee.length; i++) {
+//   let random = generateRandom(3,aee)
+//   console.log(random);
+//   aee = aee.filter((e) => e !== random);
+//   console.log(aee)
+// }

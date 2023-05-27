@@ -1,74 +1,300 @@
 [
     {
         "title": "What does HTML stands for",
-        "answer_1" : "Hypertext Machine language.", 
-        "answer_2" : "Hypertext and links markup language.", 
-        "answer_3" : "Hypertext Markup Language.", 
-        "answer_4" : "Hightext machine language.", 
-        "right_answer": "Hypertext Markup Language."
+        "answer_1" : "Hypertext Machine language", 
+        "answer_2" : "Hypertext and links markup language", 
+        "answer_3" : "Hypertext Markup Language", 
+        "answer_4" : "Hightext machine language", 
+        "right_answer": "Hypertext Markup Language"
     },
     {
-        "title": "why we use <br> element",
-        "answer_1" : "to make text bold", 
-        "answer_2" : "to make text italic", 
-        "answer_3" : "to make text bolder", 
-        "answer_4" : "to add a break line", 
-        "right_answer": "to add a break line"
+        "title": "Which input type defines a slider control?",
+        "answer_1" : "slider", 
+        "answer_2" : "controls", 
+        "answer_3" : "range", 
+        "answer_4" : "search", 
+        "right_answer": "range"
     },
     {
-        "title": "why we use <img> element 1",
-        "answer_1" : "to add a link", 
-        "answer_2" : "to add a footer", 
-        "answer_3" : "to create an image", 
-        "answer_4" : "to add an image", 
-        "right_answer": "to add an image"
+        "title": "Who is making the Web standards?",
+        "answer_1" : "google", 
+        "answer_2" : "mozilla", 
+        "answer_3" : "microsoft", 
+        "answer_4" : "the world wide web consortium", 
+        "right_answer": "the world wide web consortium"
     },
     {
-        "title": "why we use <br> element 2",
-        "answer_1" : "to make text bold", 
-        "answer_2" : "to make text italic", 
-        "answer_3" : "to make text bold", 
-        "answer_4" : "to add a break line", 
-        "right_answer": "to add a break line"
+        "title": "Caption Tag in HTML",
+        "answer_1" : "Is used to display the Title for table at the bottom", 
+        "answer_2" : "Is used to display the Title for table at the top", 
+        "answer_3" : "Both", 
+        "answer_4" : "None", 
+        "right_answer": "Is used to display the Title for table at the top"
     },
     {
-        "title": "why man use <br> element 3",
-        "answer_1" : "nto make text bold", 
-        "answer_2" : "nto make text italic", 
-        "answer_3" : "nto make text bold", 
-        "answer_4" : "nto add a break line", 
-        "right_answer": "nto add a break line"
+        "title": "The default font-size of HTML document is",
+        "answer_1" : "6", 
+        "answer_2" : "4", 
+        "answer_3" : "3", 
+        "answer_4" : "none", 
+        "right_answer": "none"
     },
     {
-        "title": "whyman use <br> element 4",
-        "answer_1" : "nto make text bold", 
-        "answer_2" : "nto make text italic", 
-        "answer_3" : "nto make text bold", 
-        "answer_4" : "nto add a break line", 
-        "right_answer": "nto add a break line"
+        "title": "In HTML, which attribute is used to specify that an input field must be filled out",
+        "answer_1" : "formvalidate", 
+        "answer_2" : "validate", 
+        "answer_3" : "required", 
+        "answer_4" : "placeholder", 
+        "right_answer": "required"
     },
     {
-        "title": "why Noamn use <br> element 5",
-        "answer_1" : "nto make text bold", 
-        "answer_2" : "nto make text italic", 
-        "answer_3" : "nto make text bold", 
-        "answer_4" : "nto add a break line", 
-        "right_answer": "nto add a break line"
+        "title": "What does an HTML tag do",
+        "answer_1" : "It determines the organizational structure of your Web site", 
+        "answer_2" : " It specifies formatting and layout instructions for your web page", 
+        "answer_3" : "It hides programming instructions from view", 
+        "answer_4" : " It connects your web site to an operating environment", 
+        "right_answer": "It determines the organizational structure of your Web site"
     },
     {
-        "title": "why Naman use <br> element 6",
-        "answer_1" : "nto make text bold", 
-        "answer_2" : "nto make text italic", 
-        "answer_3" : "nto make text bold", 
-        "answer_4" : "nto add a break line", 
-        "right_answer": "nto add a break line"
+        "title": "Which HTML element defines navigation links",
+        "answer_1" : "navigate", 
+        "answer_2" : "navigation", 
+        "answer_3" : "nav", 
+        "answer_4" : "navbar", 
+        "right_answer": "nav"
     },
     {
-        "title": "why last question use <br> element 7",
-        "answer_1" : "nto make text bold", 
-        "answer_2" : "nto make text italic", 
-        "answer_3" : "nto make text bold", 
-        "answer_4" : "nto add a break line", 
-        "right_answer": "nto add a break line"
+        "title": "How can we resize the image",
+        "answer_1" : "Using height and width", 
+        "answer_2" : "Using resize attribute", 
+        "answer_3" : "Using size attribute", 
+        "answer_4" : "Using rs attribute", 
+        "right_answer": "Using height and width"
+    },
+    {
+        "title": "Which of the following is valid colour code",
+        "answer_1" : "#0000000;", 
+        "answer_2" : "#000000;", 
+        "answer_3" : "#000000000;", 
+        "answer_4" : "#0e3;", 
+        "right_answer": "#000000;"
+    },
+    {
+        "title": "How can you make a numbered list",
+        "answer_1" : "list tag", 
+        "answer_2" : "li tag", 
+        "answer_3" : "ul tag", 
+        "answer_4" : "ol tag", 
+        "right_answer": "ul tag"
+    },
+    {
+        "title": "In HTML, what does the “aside” tag element define?",
+        "answer_1" : "The ASCII character-set; to send information between computers on the Internet", 
+        "answer_2" : "Content aside from the page content", 
+        "answer_3" : "A navigation list to be shown at the left side of the page", 
+        "right_answer": "A navigation list to be shown at the left side of the page"
+    },
+    {
+        "title": "What is the correct HTML for making a checkbox",
+        "answer_1" : "input [type='check']", 
+        "answer_2" : "check", 
+        "answer_3" : "checkbox", 
+        "answer_4" : "input [type='checkbox']", 
+        "right_answer": "input [type='checkbox']"
+    },
+    {
+        "title": "Which of the following are attributes of Font Tag",
+        "answer_1" : "Size", 
+        "answer_2" : "Face", 
+        "answer_3" : "Color", 
+        "answer_4" : "All of above", 
+        "right_answer": "All of above"
+    },
+    {
+        "title": "When creating a Web document, what format is used to express an image’s height and width",
+        "answer_1" : "Centimeters", 
+        "answer_2" : "Pixels", 
+        "answer_3" : "Dots per inch", 
+        "answer_4" : "Inches", 
+        "right_answer": "Pixels"
+    },
+    {
+        "title": "How is document type initialized in HTML5",
+        "answer_1" : "</DOCTYPE HTML>", 
+        "answer_2" : "</DOCTYPE>", 
+        "answer_3" : "<!DOCTYPE HTML>", 
+        "answer_4" : "</DOCTYPE html>", 
+        "right_answer": "<!DOCTYPE HTML>"
+    },
+    {
+        "title": "Which of the following HTML Elements is used for making any text bold",
+        "answer_1" : "<p>", 
+        "answer_2" : "<i>", 
+        "answer_3" : "<bold>", 
+        "answer_4" : "<b>", 
+        "right_answer": "<b>"
+    },
+    {
+        "title": "Which of the following HTML element is used for creating an unordered list",
+        "answer_1" : "<ui>", 
+        "answer_2" : "<ul>", 
+        "answer_3" : "<ol>", 
+        "answer_4" : "<list>", 
+        "right_answer": "<ul>"
+    },
+    {
+        "title": "Which of the following characters indicate closing of a tag",
+        "answer_1" : ".", 
+        "answer_2" : "/", 
+        "answer_3" : "//", 
+        "answer_4" : "!", 
+        "right_answer": "/"
+    },
+    {
+        "title": "How many heading tags are there in HTML5",
+        "answer_1" : "2", 
+        "answer_2" : "3", 
+        "answer_3" : "4", 
+        "answer_4" : "6", 
+        "right_answer": "6"
+    },
+    {
+        "title": "Which of the following is the correct way of creating an hyperlink in HTML",
+        "answer_1" : "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", 
+        "answer_2" : "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", 
+        "answer_3" : "<a href= “www.geeksforgeeks.org”>Geeksforgeeks</a>", 
+        "answer_4" : "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>", 
+        "right_answer": "<a href= “www.geeksforgeeks.org”>Geeksforgeeks</a>"
+    },
+    {
+        "title": "Which tag is used for inserting the largest heading in HTML",
+        "answer_1" : "<header>", 
+        "answer_2" : "<h6>", 
+        "answer_3" : "<h1>", 
+        "answer_4" : "heading", 
+        "right_answer": "<h1>"
+    },
+    {
+        "title": "Which is used to create Web Pages",
+        "answer_1" : "C++", 
+        "answer_2" : "Java", 
+        "answer_3" : "HTML", 
+        "answer_4" : "JVM", 
+        "right_answer": "HTML"
+    },
+    {
+        "title": "The <title> element must be located inside",
+        "answer_1" : "the <head> element", 
+        "answer_2" : "the <body> element", 
+        "answer_3" : "the <main> element", 
+        "answer_4" : "the <header> element", 
+        "right_answer": "the <head> element"
+    },
+    {
+        "title": "How you can open the link in a new window",
+        "answer_1" : "target='_new'", 
+        "answer_2" : "target='_window'", 
+        "answer_3" : "target='_blank'", 
+        "answer_4" : "target='_page'", 
+        "right_answer": "target='_blank'"
+    },
+    {
+        "title": "What is the HTML element used to display an image",
+        "answer_1" : "<img>", 
+        "answer_2" : "<image>", 
+        "answer_3" : "<photo>", 
+        "answer_4" : "<picture>", 
+        "right_answer": "<img>"
+    },
+    {
+        "title": "How to write an HTML Comment",
+        "answer_1" : "// This is an HTML comment", 
+        "answer_2" : "/* This is an HTML comment */", 
+        "answer_3" : "<!-- This is an HTML comment -->", 
+        "answer_4" : "-- This is an HTML comment", 
+        "right_answer": "<!-- This is an HTML comment -->"
+    },
+    {
+        "title": "<h3> is the biggest heading tag",
+        "answer_1" : "true", 
+        "answer_2" : "false", 
+        "right_answer": "false"
+    },
+    {
+        "title": "Which is the correct HTML tag for a new paragraph",
+        "answer_1" : "<paragraph>", 
+        "answer_2" : "<p>", 
+        "answer_3" : "<pa>", 
+        "answer_4" : "<pre>", 
+        "right_answer": "<p>"
+    },
+    {
+        "title": "Which of the following HTML tags is not valid",
+        "answer_1" : "<h7>", 
+        "answer_2" : "<h1>", 
+        "answer_3" : "<h6>", 
+        "answer_4" : "<h3>", 
+        "right_answer": "<h7>"
+    },
+    {
+        "title": "What HTML form input must be used to present multiple options, but select only one",
+        "answer_1" : "<input type='text'>", 
+        "answer_2" : "<input type='checkbox'>", 
+        "answer_3" : "<input type='radio'>", 
+        "answer_4" : "<input type='select'>", 
+        "right_answer": "<input type='checkbox'>"
+    },
+    {
+        "title": "What is the HTML form input used to send information of the form to the server",
+        "answer_1" : "<input type='server'>", 
+        "answer_2" : "<input type='submit'>", 
+        "answer_3" : "<input type='send'>", 
+        "answer_4" : "<input type='move'>", 
+        "right_answer": "<input type='submit'>"
+    },
+    {
+        "title": "Is it possible to use a table inside another table",
+        "answer_1" : "true", 
+        "answer_2" : "false", 
+        "right_answer": "true"
+    },
+    {
+        "title": "<h6> is the smallest heading tag",
+        "answer_1" : "true", 
+        "answer_2" : "false", 
+        "right_answer": "true"
+    },
+    {
+        "title": "Select the correct example of an empty element",
+        "answer_1" : "<img>", 
+        "answer_2" : "</img>", 
+        "answer_3" : "<img></img>", 
+        "right_answer": "<img>"
+    },
+
+    {
+        "title": "Which of the following table tags is used to create a table data cell",
+        "answer_1" : "<td>", 
+        "answer_2" : "<thead>", 
+        "answer_3" : "<tr>", 
+        "answer_4" : "<table>", 
+        "right_answer": "<td>"
+    },
+    {
+        "title": "Which tag indicates a form field where the user can enter large amounts of text",
+        "answer_1" : "<textarea>", 
+        "answer_2" : "<input>", 
+        "answer_3" : "<label>", 
+        "answer_4" : "<p>", 
+        "right_answer": "<textarea>"
+    },
+    {
+        "title": "Who is making the Web standards?",
+        "answer_1" : "google", 
+        "answer_2" : "mozilla", 
+        "answer_3" : "microsoft", 
+        "answer_4" : "the world wide web consortium", 
+        "right_answer": "the world wide web consortium"
     }
+
 ]

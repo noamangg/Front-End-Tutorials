@@ -13,13 +13,17 @@
 13 - if count timer end move to the next question
 14 - add class on bullet after answering the question
 14 - calc the points and show results
-
-
-Ideas 
 - a json object for each language quiz
 - add many questions and choose only 10 randomly [Done]
+
+Ideas 
 - randomize answers 
 
+
+
+https://www.tutorialswebsite.com/html-quiz/
+https://www.geeksforgeeks.org/html-course-practice-quiz-2/
+https://www.w3docs.com/quiz/html-basic
 حط على اليمين واجهة مقارنة النقاط السابقة بالنقاط الحالية اون آخر امتحان اخذذه كم كان نقاطه فيه
 
 بهاد التطبيق بدي واجهة لحتى انا اقدر اضيف واعدل البيانات الموجودة يعني إذا بدي اضيف سؤال مااروح على ملف ال جايسون اضيف وانما عن طريق واجهة UI وهي بتضيف الملفات لحالها بالجيسون
