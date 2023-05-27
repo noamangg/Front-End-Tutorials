@@ -117,6 +117,8 @@ body {
   display: flex;
   gap: 5px;
   align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
 }
 .bullets .spans span {
   width: 15px;
@@ -148,6 +150,7 @@ body {
   align-items: center;
 }
 .result-box {
+  margin: .5rem;
   position: absolute;
   background-color: #302b63;
   padding: 2rem 4rem;
@@ -172,10 +175,9 @@ body {
   color: white;
   cursor: pointer;
   transition: 0.25s;
+  margin: .5rem;
 }
-.result-box button:first-of-type {
-  margin-right: 0.25rem;
-}
+
 .result-box button:hover {
   background-color: #24243e;
 }
@@ -185,6 +187,9 @@ body {
 }
 .result-box p span.good {
   color: #009688;
+}
+.result-box p span.fine {
+  color: #ffc107;
 }
 .result-box p span.bad {
   color: #e91e63;
@@ -232,7 +237,7 @@ body {
   cursor: pointer;
   transition: 0.25s;
 }
-.container-index > a:is(:not(.tailwind, .js)):hover {
+.container-index > a:is(:not(.tailwind, .js, .css)):hover {
   transform: translateY(-20px);
 }
 .container-index > a.css {
@@ -247,7 +252,7 @@ body {
 .container-index > a.tailwind {
   background-color: #00ade2;
 }
-.container-index > a:is(.tailwind, .js)::before {
+.container-index > a:is(.tailwind, .js, .css)::before {
   content: "";
   position: absolute;
   top: 0;
@@ -263,4 +268,11 @@ body {
 }
 .container-index > a > p {
   font-weight: bolder;
+}
+
+@media (max-width:400px) {
+  .quiz-app {
+    padding: 1rem;
+    margin: 10px 10px;
+  }
 }

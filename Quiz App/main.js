@@ -14,14 +14,14 @@ let countdownInterval;
 let durationTime = 5;
 let arrQuestions;
 let qQuestions = 15;
-
+let qCount = qQuestions;
 function getQuestion() {
   let myRequest = new XMLHttpRequest();
 
   myRequest.onreadystatechange = function () {
     if (this.status === 200 && this.readyState === 4) {
       let questionObject = JSON.parse(this.responseText);
-      let qCount = qQuestions;
+
       let questionLength = questionObject.length;
       // let qCount = questionObject.length;
 
@@ -62,7 +62,7 @@ function getQuestion() {
 
           }
 
-        }, 500);
+        }, 250);
       });
 
     }
@@ -97,11 +97,11 @@ function addQuestionsData(obj) {
   // Add Answers To The HTML
   answersArea.innerHTML = "";
   let questionArray = new Array(Object.keys(obj).length - 2);
-  for(let i = 0; i < questionArray.length; i++)
-  questionArray[i] = i + 1;
+  for (let i = 0; i < questionArray.length; i++)
+    questionArray[i] = i + 1;
 
   for (let i = 0; i < Object.keys(obj).length - 2; i++) {
-    let random = generateRandom(Object.keys(obj).length - 1,questionArray);
+    let random = generateRandom(Object.keys(obj).length - 1, questionArray);
     let li = document.createElement("li");
     li.className = "answer";
     let input = document.createElement("input");
@@ -135,9 +135,13 @@ function openMenu() {
   window.location.href = "index.html"
 }
 function showResult(totalQuestions) {
-  let word = `<span class ="good">good</span>`;
+  let word = `<span class ="bad">bad</span>`;
   if (rightAnswers === totalQuestions)
     word = `<span class ="perfect">perfect</span>`;
+  else if (rightAnswers <= totalQuestions / 2 && rightAnswers > totalQuestions / 3)
+    word = `<span class ="good">good</span>`;
+  else if (rightAnswers <= totalQuestions / 3 && rightAnswers > totalQuestions / 4)
+    word = `<span class ="fine">fine</span>`;
   else if (rightAnswers <= totalQuestions / 4)
     word = `<span class ="bad">bad</span>`;
   let resultBox = document.createElement("div");
@@ -191,21 +195,19 @@ function countDown(duration) {
     seconds = addZeroes(seconds);
 
     countdownElement.innerHTML = `${minutes}:${seconds}`;
-    if (--duration < 0 && arrQuestions.length != 0) {
+    if (--duration < 0) {
       clearInterval(countdownInterval);
-      document.querySelector("label").click();
+      if (qCount >= 0) {
+        document.querySelector("label").click();
+      }
     }
 
   }, 800);
 }
 function generateRandom(max, arr) {
   let random = Math.floor(Math.random() * max);
-  let i = 0;
   while (!arr.includes(random)) {
-    random = Math.floor(Math.random() * max);i++;
-    // console.log(`I'm in random hell`)
-    // if(i > 100)
-    // break;
+    random = Math.floor(Math.random() * max)
   }
 
   return random;
