@@ -1,0 +1,62 @@
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eee;
+}
+main {
+
+}
+
+.change-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.112);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.change-box .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background-color: #eef;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+}
+.change-box .line:first-of-type input,
+.change-box .line:last-of-type p {
+    padding: .5rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+.change-box .line:first-of-type input {
+    border: none;
+    outline: none;
+}
+.change-box .line:last-of-type p {
+    background-color: white;
+    flex: 1;
+}
+.change-box .line img {
+    width: 75px;
+}

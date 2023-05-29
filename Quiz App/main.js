@@ -147,7 +147,7 @@ function showResult(totalQuestions) {
   let resultBox = document.createElement("div");
   resultBox.className = "result-box";
   let h2 = document.createElement("h2");
-  h2.innerHTML = `Your Result IS ${rightAnswers} Points`;
+  h2.innerHTML = `Your Result Is ${rightAnswers} Points`;
   let p = document.createElement("p");
   p.innerHTML = `${rightAnswers}/${totalQuestions} you are ${word}`;
 
