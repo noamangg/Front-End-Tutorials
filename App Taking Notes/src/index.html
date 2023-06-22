@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteYme</title>
+    <link rel="icon" href="../assets/icon.png">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./input.css">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-red-500">
+    <main class="">
+        <div class="container mx-auto flex">
+            <aside class="bg-white text-gray-800 max-w-xs min-w-max w-60 min-h-screen shadow-xl  z-10">
+                <div class="profiled-aside flex items-center gap-2 py-5 px-3 border-b border-b-slate-400">
+                    <img class="w-8 rounded-full" src="../assets/344.jpg" alt="my-profile">
+                    <div class="text">
+                        <h4 class="m-0">Noaman Grewatiy</h4>
+                        <p class="text-xs m-0">noamangrewatiy@gmail.com</p>
+                    </div>
+                </div>
+                <a class="p-2 bg-red-600 flex items-center justify-center gap-2 text-1xl m-2 rounded text-white "><i
+                        class="fa-plus-square fa-solid"></i>Add Project</a>
+                <div class="pages-aside py-4 px-3 flex flex-col border-b border-b-slate-400 ">
+                    <a class="aside-link"
+                        href=""><i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Search</p>
+                    </a>
+                    <a class="aside-link"
+                        href=""><i class="fa-solid fa-house"></i>
+                        <p>Home</p>
+                    </a>
+                    <a class="aside-link"
+                        href=""><i class="fa-solid fa-note-sticky"></i>
+                        <p>Notes</p>
+                    </a>
+                    <a class="aside-link"
+                        href=""><i class="fa-solid fa-check-double"></i>
+                        <p>Tasks</p>
+                    </a>
+                </div>
+
+                <div class="files-aside py-5 px-3 flex flex-col">
+                    <div
+                        class="projects-aside py-3 px-2 rounded cursor-pointer h-12 overflow-hidden  hover:bg-red-100 hover:h-40 hover:overflow-scroll duration-75">
+                        <h4 class="flex justify-between items-center"><span><i
+                                    class="fa-solid fa-folder mr-2"></i>Projects</span><i
+                                class="fa-solid fa-chevron-down"></i></h4>
+                        <ul class="grid mt-4 grid-cols-1 gap-2">
+                            <li><span class="color-bullte"></span> Workshop Planning</li>
+                            <li><span class="color-bullte"></span> Design Explained</li>
+                            <li><span class="color-bullte"></span> User's Feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="main-page p-4 bg-gray-100 max-h-screen overflow-auto">
+                <h1 class="mt-5 text-2xl text-red-600">Welcome Back, <span id="account-name">Noaman</span>!</h1>
+                <div class="columns-main flex gap-4">
+                    <div class="col-1 ">
+                        <section class="projects-main">
+                            <h2 class="text-2xl mt-10 mb-5"><i class="fa-solid fa-folder mr-2"></i>My Projects</h2>
+                            <div class="projects-container grid md:grid-cols-3 gap-4">
+                                <div class="project">
+                                    <h4><span class="color-bullte"></span>Testing Projects here</h4>
+                                    <div class="project-info flex items-center justify-between">
+                                        <div class="project-date text-sm text-gray-400">
+                                            22Th, April, 2029
+                                        </div>
+                                        <span class="text-gray-400">...</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" flex flex-col justify-between project-1 bg-white p-4  border border-solid border-gray-200  rounded h-40 overflow-hidden">
+                                    <h4><span class="color-bullte"></span>Testing Projects here</h4>
+                                    <div class="project-info flex items-center justify-between">
+                                        <div class="project-date text-sm text-gray-400">
+                                            22Th, April, 2029
+                                        </div>
+                                        <span class="text-gray-400">...</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" flex flex-col justify-between project-1 bg-white p-4  border border-solid border-gray-200  rounded h-40 overflow-hidden">
+                                    <h4><span class="color-bullte"></span>Testing Projects here</h4>
+                                    <div class="project-info flex items-center justify-between">
+                                        <div class="project-date text-sm text-gray-400">
+                                            22Th, April, 2029
+                                        </div>
+                                        <span class="text-gray-400">...</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" flex flex-col justify-between project-1 bg-white p-4  border border-solid border-gray-200  rounded h-40 overflow-hidden">
+                                    <h4><span class="color-bullte"></span>Testing Projects here</h4>
+                                    <div class="project-info flex items-center justify-between">
+                                        <div class="project-date text-sm text-gray-400">
+                                            22Th, April, 2029
+                                        </div>
+                                        <span class="text-gray-400">...</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" flex flex-col justify-between project-1 bg-white p-4  border border-solid border-gray-200  rounded h-40 overflow-hidden">
+                                    <h4><span class="color-bullte"></span>Testing Projects here</h4>
+                                    <div class="project-info flex items-center justify-between">
+                                        <div class="project-date text-sm text-gray-400">
+                                            22Th, April, 2029
+                                        </div>
+                                        <span class="text-gray-400">...</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" flex flex-col justify-between project-1 bg-white p-4  border border-solid border-gray-200  rounded h-40 overflow-hidden">
+                                    <h4><span class="color-bullte"></span>Testing Projects here</h4>
+                                    <div class="project-info flex items-center justify-between">
+                                        <div class="project-date text-sm text-gray-400">
+                                            22Th, April, 2029
+                                        </div>
+                                        <span class="text-gray-400">...</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" flex flex-col justify-between project-1 bg-white p-4  border border-solid border-gray-200  rounded h-40 overflow-hidden">
+                                    <h4><span class="color-bullte"></span>Testing Projects here</h4>
+                                    <div class="project-info flex items-center justify-between">
+                                        <div class="project-date text-sm text-gray-400">
+                                            22Th, April, 2029
+                                        </div>
+                                        <span class="text-gray-400">...</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </section>
+
+                        <section class="notes-main">
+                            <h2 class="text-2xl mt-10 mb-5"><i class="fa-solid fa-note-sticky"></i>My Notes</h2>
+                            <div class="notes-container grid lg:grid-cols-3 md:grid-cols-2   gap-4">
+                                <div
+                                    class="bg-white p-4  border border-solid border-gray-200  rounded h-60 overflow-hidden">
+                                    <div class="note-info flex items-center justify-between">
+                                        <div class="note-date text-sm text-gray-400">
+                                            22Th, April, 2029
+                                        </div>
+                                        <span class="text-gray-400">...</span>
+                                    </div>
+                                    <h4 class="my-3">Testing Projects here</h4>
+                                    <p class="h-1/2 overflow-hidden overflow-ellipsis">Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Asperiores hic culpa aut vero
+                                        nihil eum corrupti quas? Omnis repellendus dolorum illo officiis, fugit
+                                        doloremque
+                                        molestias? Nulla vitae alias fugiat, aliquam assumenda, facere a impedit natus
+                                        pariatur
+                                        adipisci animi voluptatum accusamus, laborum saepe doloribus. Doloremque,
+                                        molestias
+                                        asperiores. Quo molestiae vitae quaerat optio, culpa, perspiciatis ipsum
+                                        reprehenderit
+                                        rem est doloribus dicta corporis totam, accusantium ut tenetur eaque? Dicta
+                                        vitae
+                                        obcaecati perferendis aspernatur incidunt eius assumenda dolore voluptates, ea
+                                        similique
+                                        laudantium dolorum. Maiores nobis corporis nihil nam rerum ex veritatis
+                                        possimus. Ut
+                                        modi numquam necessitatibus quibusdam blanditiis minus distinctio fugiat sed,
+                                        optio
+                                        deserunt.</p>
+                                    <ul class="hashtags">
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-2">
+                        <section class="tasks-main">
+                            <h2 class="text-2xl mt-10 mb-5"><i class="fa-solid fa-check-double"></i>My Tasks</h2>
+                            <div class="flex flex-col gap-6 p-3 bg-white tasks-container self-start rounded">
+                                <div class="task flex justify-between items-center">
+                                    <div class="flex flex-1 gap-2">
+                                        <input type="checkbox" id="task024323">
+                                        <label for="task024323">My Task is Here</la>
+                                    </div>
+                                    <i class="fa-star fa-solid text-red-600"></i>
+                                </div>
+                                <div class="task flex justify-between items-center">
+                                    <div class="flex flex-1 gap-2">
+                                        <input type="checkbox" id="task024323">
+                                        <label for="task024323">My Task is Here</la>
+                                    </div>
+                                    <i class="fa-star fa-solid text-red-600"></i>
+                                </div>
+                                <div class="task flex justify-between items-center">
+                                    <div class="flex flex-1 gap-2">
+                                        <input type="checkbox" id="task024323">
+                                        <label for="task024323">My Task is Here</la>
+                                    </div>
+                                    <i class="fa-star fa-solid text-red-600"></i>
+                                </div>
+                                <div class="task flex justify-between items-center">
+                                    <div class="flex flex-1 gap-2">
+                                        <input type="checkbox" id="task024323">
+                                        <label for="task024323">My Task is Here</la>
+                                    </div>
+                                    <i class="fa-star fa-solid text-red-600"></i>
+                                </div>
+                                <div class="task flex justify-between items-center">
+                                    <div class="flex flex-1 gap-2">
+                                        <input type="checkbox" id="task024323">
+                                        <label for="task024323">My Task is Here</la>
+                                    </div>
+                                    <i class="fa-star fa-solid text-red-600"></i>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>
